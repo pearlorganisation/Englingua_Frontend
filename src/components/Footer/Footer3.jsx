@@ -1,18 +1,13 @@
+import { Apple, Play } from "lucide-react";
+import RDash from "../../assets/RDash.webp";
+
 export default function Footer() {
   return (
     <>
-      <footer className="text-slate-500 mt-32">
-        {/* <!-- Main footer --> */}
+      <footer className="bg-white mt-32">
         <div className="pt-16 pb-12 text-sm border-t border-slate-200 bg-slate-100">
           <div className="container px-6 mx-auto">
-            <div className="flex flex-row justify-center items-center">
-              <div className="text-5xl">EA</div>
-              <div className="flex flex-col ">
-                <h1 className=""> Englingua </h1>
-                <h1 className=""> Academy </h1>
-              </div>
-            </div>
-            <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 mt-12">
+            <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-10 mt-12">
               <div
                 className="col-span-4 md:col-span-8 lg:col-span-4"
                 aria-labelledby="footer-header"
@@ -21,47 +16,30 @@ export default function Footer() {
                   id="WindUI-5-logo"
                   aria-label="WindUI logo"
                   aria-current="page"
-                  className="flex items-center gap-2 mb-6 text-base font-medium leading-6 whitespace-nowrap text-slate-700 focus:outline-none"
+                  className="flex items-center gap-2 text-base font-medium leading-6 whitespace-nowrap text-black focus:outline-none"
                   href="javascript:void(0)"
                 >
-                  <svg
-                    width="300"
-                    height="300"
-                    viewBox="0 0 300 300"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 shrink-0 bg-emerald-500"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M88.1121 88.1134L150.026 150.027L150.027 150.027L150.027 150.027L150.028 150.027L150.027 150.026L88.1133 88.1122L88.1121 88.1134ZM273.878 273.877C272.038 274.974 196.128 319.957 165.52 289.349L88.1124 211.942L26.1434 273.911C26.1434 273.911 -20.3337 196.504 10.651 165.519L88.1121 88.1134L26.1417 26.1433C26.1417 26.1433 69.6778 0.00338007 104.519 0H0V300H300V0H104.533C116.144 0.00112664 126.789 2.90631 134.534 10.651L211.941 88.1123L273.877 26.177C274.974 28.0159 319.957 103.926 289.349 134.535L211.942 211.942L273.878 273.877ZM273.878 273.877L273.912 273.857V273.911L273.878 273.877ZM273.877 26.177L273.911 26.1429H273.857C273.857 26.1429 273.863 26.1544 273.877 26.177Z"
-                      fill="#f1f5f9"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M0 0H300V300H0V0ZM150.026 150.025C121.715 99.731 88.1131 88.1122 88.1131 88.1122L10.6508 165.519C10.6508 165.519 26.143 150.027 150.026 150.027H150.027C150.026 150.027 150.026 150.027 150.026 150.027L150.026 150.027C99.731 178.339 88.1124 211.941 88.1124 211.941L165.52 289.348C165.52 289.348 150.032 273.86 150.027 150.027H150.029C178.341 200.323 211.944 211.942 211.944 211.942L289.352 134.535C289.352 134.535 273.864 150.023 150.027 150.027V150.027L150.027 150.027C200.322 121.715 211.941 88.1125 211.941 88.1125L134.534 10.651C134.534 10.651 150.026 26.1431 150.026 150.025ZM150.027 150.027L150.026 150.027C150.026 150.026 150.026 150.026 150.026 150.025C150.026 150.025 150.027 150.026 150.027 150.027ZM150.027 150.027L150.027 150.026L150.027 150.027C150.027 150.027 150.027 150.027 150.027 150.027L150.027 150.027ZM150.027 150.027C150.027 150.027 150.027 150.027 150.027 150.027H150.027L150.027 150.027Z"
-                      fill="rgba(255, 255, 255, .2)"
-                    />
-                  </svg>
-                  Brand
+                  <img src={RDash} className="w-32 h-24" />
                 </a>
-                <p>
-                  Expertly made, responsive, accessible components in React and
-                  HTML ready to be used on your website or app. Just copy and
-                  paste them on your Tailwind CSS project.
-                </p>
+                <h1 className="mt-8">
+                  RDash is a new age construction management platform for
+                  Developers, contractors and design studios
+                </h1>
+
+                <h1 className="mt-8">
+                  It enables complete workflow automation for all professionals
+                  involved in construction and interior projects management
+                </h1>
               </div>
               <nav
                 className="col-span-2 md:col-span-4 lg:col-span-2"
                 aria-labelledby="footer-product-5-logo"
               >
                 <h3
-                  className="mb-6 text-base font-medium text-slate-700"
+                  className="mb-6 text-base font-bold text-black"
                   id="footer-product-5-logo"
                 >
-                  Product
+                  Solutions
                 </h3>
                 <ul>
                   <li className="mb-2 leading-6">
@@ -70,7 +48,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      Features{" "}
+                      Lead Management
                     </a>
                   </li>
                   <li className="mb-2 leading-6">
@@ -79,7 +57,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      Customers{" "}
+                      Project Management
                     </a>
                   </li>
                   <li className="mb-2 leading-6">
@@ -88,7 +66,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      Why us?{" "}
+                      Vendor Management
                     </a>
                   </li>
                   <li className="mb-2 leading-6">
@@ -97,7 +75,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      Pricing{" "}
+                      Task Management
                     </a>
                   </li>
                 </ul>
@@ -107,10 +85,10 @@ export default function Footer() {
                 aria-labelledby="footer-docs-5-logo"
               >
                 <h3
-                  className="mb-6 text-base font-medium text-slate-700"
+                  className="mb-6 text-base font-bold text-black"
                   id="footer-docs-5-logo"
                 >
-                  Docs & Help
+                  Quick Links
                 </h3>
                 <ul>
                   <li className="mb-2 leading-6">
@@ -119,7 +97,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      Documentation
+                      About Us
                     </a>
                   </li>
                   <li className="mb-2 leading-6">
@@ -128,7 +106,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      Training{" "}
+                      Pricing
                     </a>
                   </li>
                   <li className="mb-2 leading-6">
@@ -137,7 +115,7 @@ export default function Footer() {
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
                       {" "}
-                      System status{" "}
+                      Blogs
                     </a>
                   </li>
                   <li className="mb-2 leading-6">
@@ -145,17 +123,7 @@ export default function Footer() {
                       href="javascript:void(0)"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
-                      {" "}
-                      FAQ's{" "}
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      {" "}
-                      Help Center{" "}
+                      Help Center
                     </a>
                   </li>
                 </ul>
@@ -165,60 +133,33 @@ export default function Footer() {
                 aria-labelledby="footer-about-5-logo"
               >
                 <h3
-                  className="mb-6 text-base font-medium text-slate-700"
+                  className="mb-6 text-base font-bold text-black"
                   id="footer-about-5-logo"
                 >
-                  About us
+                  Downloads
                 </h3>
                 <ul>
-                  <li className="mb-2 leading-6">
+                  <li className="mb-2 leading-6 flex items-center gap-2">
+                    <Apple className="w-5 h-5 text-gray-500" />
                     <a
                       href="javascript:void(0)"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
-                      {" "}
-                      About us{" "}
+                      Apple App Store
                     </a>
                   </li>
-                  <li className="mb-2 leading-6">
+                  <li className="mb-2 leading-6 flex items-center gap-2">
+                    <Play className="w-5 h-5 text-gray-500" />
                     <a
                       href="javascript:void(0)"
                       className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
                     >
-                      {" "}
-                      Careers{" "}
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      {" "}
-                      Leadership{" "}
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      {" "}
-                      Blog
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      {" "}
-                      Events{" "}
+                      Google Play Store
                     </a>
                   </li>
                 </ul>
               </nav>
-              <nav
+              {/* <nav
                 className="col-span-2 md:col-span-4 lg:col-span-2"
                 aria-labelledby="footer-get-in-touch-5-logo"
               >
@@ -266,7 +207,7 @@ export default function Footer() {
                     </a>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
             </div>
           </div>
         </div>
@@ -275,7 +216,7 @@ export default function Footer() {
           <div className="container px-6 mx-auto">
             <div className="grid items-center grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
               <div className="col-span-2 md:col-span-4 lg:col-span-6">
-                Copyright 2024 Brand
+                @c 2024 Vonken Brandtech Pvt. Ltd
               </div>
               <nav
                 className="col-span-3 md:col-span-4 lg:col-span-6"
@@ -288,25 +229,17 @@ export default function Footer() {
                   <li className="leading-6">
                     <a
                       href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                      className="transition-colors duration-300"
                     >
-                      T&C
+                      Terms of Service
                     </a>
                   </li>
                   <li className="leading-6">
                     <a
                       href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                      className="transition-colors duration-300 "
                     >
-                      Privacy
-                    </a>
-                  </li>
-                  <li className="leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Cookies
+                      Privacy Policy
                     </a>
                   </li>
                 </ul>
