@@ -1,21 +1,40 @@
 export default function Card() {
+  const data = [
+    {
+      img: "https://ksm.edu.in/blogs/wp-content/uploads/2024/06/Top-Jobs-After-MBA-in-Finance-1024x574.jpg",
+      imgdescription:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa quam ipsam accusamus expedita aut iusto nihil quibusdam laboriosam eligendi, veritatis, doloribus earum neque est minus voluptatibus aliquam laudantium? Omnis! ",
+    },
+    {
+      img: "https://ksm.edu.in/blogs/wp-content/uploads/2024/06/Top-Jobs-After-MBA-in-Finance-1024x574.jpg",
+      imgdescription:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa quam ipsam accusamus expedita aut iusto nihil quibusdam laboriosam eligendi, veritatis, doloribus earum neque est minus voluptatibus aliquam laudantium? Omnis! ",
+    },
+    {
+      img: "https://ksm.edu.in/blogs/wp-content/uploads/2024/06/Top-Jobs-After-MBA-in-Finance-1024x574.jpg",
+      imgdescription:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa quam ipsam accusamus expedita aut iusto nihil quibusdam laboriosam eligendi, veritatis, doloribus earum neque est minus voluptatibus aliquam laudantium? Omnis! ",
+    },
+  ];
+
   return (
-    <div className="relative w-80 h-96  rounded-lg overflow-hidden shadow-lg">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://t4.ftcdn.net/jpg/05/45/42/81/360_F_545428173_uyYWJoR9n5uJFYIWfDa2C49AzIECcU20.jpg')",
-        }}
-      />
-
-      {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-
-      {/* Content */}
-      <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-4 text-center">
-        Fixed Bottom Text
+    <div className="px-4 py-10 mx-auto max-w-7xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="rounded-lg shadow-lg flex flex-col overflow-hidden bg-white"
+          >
+            <img
+              src={item.img}
+              alt=""
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <p className="text-gray-700">{item.imgdescription}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
